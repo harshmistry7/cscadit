@@ -1,0 +1,29 @@
+.cnt{
+    display: flex;
+    gap: 2rem;
+}
+.icn img{
+    height: 300px;
+}
+.txt{
+    display: flex;
+    align-items: center;
+}
+.sub-title{
+    text-align: center;
+}
+@media only screen and (max-width:600px){
+    .cnt{
+        display: flex;
+        flex-wrap:wrap ;
+        gap: 0rem;
+    }
+    .odd{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .icn{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,316 @@
+*{
+    font-family: 'poppins';
+    /* font-family: 'Courier New', Courier, monospace; */
+    margin:0;
+}
+body{
+    padding-top: 4rem;
+    background-color: #01012b;
+    color:#eeeeee
+}
+html{
+    scroll-behavior: smooth;
+}
+.btn{
+    margin: 1rem  0;
+    display: block;
+    width: fit-content;
+    border: 2px solid #3763f4;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn:hover{
+    background: #3763f4;
+}
+.sub-title{
+    color:#00b779;
+    font-size: 30px;
+    margin:0.5rem 0rem ;
+}
+.container {
+    padding: 10px 10%;
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/img/others/bghm.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ---------------------home----------------------------------- */
+
+.home-cnt{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    /* background: hsla(240, 95%, 9%, 0.767); */
+    
+}
+.home-img img{
+    width: 50%;
+}
+.home-txt{
+    width: 50%;
+    color:#fff;
+    margin: 15% 0;
+    font-size: 25px;
+
+}
+.home-txt button{
+    color: #fff;
+    margin: 2% 0;
+}
+/* ---------------------about----------------------------------- */
+.about-cnt{
+    display: flex;
+    align-items: center;
+}
+.about-txt{
+    font-size: 15px;
+}
+.about-img img{
+    width: auto;
+    padding: 0 2rem;
+}
+/* ---------------------event----------------------------------- */
+.event-cnt .event-img{
+    columns:3 250px;
+    gap:15px;
+}
+  
+.event-cnt .event-img img{
+    padding-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.event-img-cnt{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+.event-img-cnt img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: tramsform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+    /* padding: 0 40px; */
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    margin-bottom: 0.25rem;
+}
+.layer-cnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0.75rem;
+}
+/* .layer-cnt button{
+    color: #fff;
+    border: 1px solid #fff;
+} */
+.layer-cnt .btn{
+    width: fit-content;
+    padding: 0.1rem 0.25rem;
+}
+
+.event-img-cnt h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.event-img-cnt a{
+     margin-top: 20px;
+     text-decoration: none;
+     font-size: 18px;
+     line-height:60px;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     text-align: center;
+}
+.event-img-cnt:hover img{
+    transform: scale(1.1);
+}
+.event-img-cnt:hover .layer{
+    height: 100%;
+}
+
+/* ---------------------team----------------------------------- */
+.team-cnt {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.team-btn{
+    display: flex;
+    justify-content: center;
+}
+/* ---------------------contact----------------------------------- */
+.contact-cnt{
+    display: flex;
+}
+.contact-det{
+    font-size: 20px;
+}
+.contact-det i{
+    color: #fff;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.contact-det a{
+    text-decoration: none;
+    color: #fff;
+}
+.contact-frm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    border:3px solid #3763f4;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.contact-bx{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contact-bx input{
+    width: 100%;
+    height: 2rem;
+    border:none;
+    outline:none;
+    background-color: #ededed;
+    border-radius: 0.25rem;
+    margin: 0.25rem;
+}
+.contact-map iframe{
+    width: 400px;
+    height:300px;
+}
+
+.subs{
+    margin-top: 0.25rem;
+}
+/* ---------------------footer----------------------------------- */
+#footer{
+    margin: 1rem 0;
+    text-align: center;
+}
+
+@media screen and (max-width:991px){
+    nav .fa-solid{
+        display: block;
+    }
+    nav{
+        margin-right: 0.25rem;
+        width: 100%;
+    }
+    nav ul{
+        background: #01012b;
+        position: fixed;
+        top:0;
+        right: -250px;;
+        width:200px;
+        height: 100vh;
+        padding-top: 50px; 
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: flex;
+        flex-direction:column;
+        margin: 25px;
+    }
+    nav ul .fa-xmark{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    } 
+    
+   
+}
+@media only screen and (max-width:600px){
+   
+    #home{
+        width: 100%;
+        height: 100vh;
+        background-image: url(/csc/assets/img/basic/bghm2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+    }
+    .home-cnt{
+        padding-top: 5rem;
+
+    }
+    .home-cnt h2{
+        font-size: 20px;
+
+    }
+    .about-cnt{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-img img{
+        width: 80%;
+    }
+    .team-cnt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-cnt{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-map iframe{
+        width: 350px;
+        height:300px;
+    }
+    .contact-det{
+        padding-bottom: 1rem;
+    }
+    .contact-pg{
+        padding: 2rem 0rem;;
+    }
+    
+}
+
+

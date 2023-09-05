@@ -1,0 +1,12 @@
+.team-cnt {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.sub-title{
+    text-align: center;
+}

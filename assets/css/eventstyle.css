@@ -1,0 +1,64 @@
+.event-cnt{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.event-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: justify;
+}
+.event-img{
+    height: 400px;
+    width: fit-content;
+    border-radius: 5%;
+}
+.event-righ{
+    width: 50%;
+}
+.eve-btn{
+    background-color: #3763f4;
+    padding:0.5rem 1rem;
+    box-shadow:0 0.5rem 1rem rgba(55,99,244,.15);
+    border-radius: 2rem;
+    margin: 0.25rem 0rem;
+    width: 10%;
+    text-align: center;
+
+}
+.eve-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+p{
+    color: #60656e;
+}
+@media only screen and (max-width:750px){
+    *{
+        text-align: center;
+    }
+    .event-cnt{
+        flex-wrap: wrap;
+    }
+    .event-righ{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .event-left{
+        width: 100%;
+        align-items: center;
+    }
+    .odd{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+}

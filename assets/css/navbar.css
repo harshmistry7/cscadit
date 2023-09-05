@@ -1,0 +1,82 @@
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #01012be1;
+    top:0px;
+    margin:0rem;
+    z-index: 10;
+}
+.fa-solid{
+    margin-right: 2%;
+    font-size: 2rem;
+}
+.logo {
+    width: 4rem;
+    padding-left: 2%;
+}
+nav ul li {
+    display:inline-flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin: 5px 10px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    padding: 0.25rem 0.5rem;
+}
+nav ul li a:active,
+nav ul li a:hover {
+    border:1px solid #3763f4;
+    border-radius: 0.94rem;
+    /* color: #3763f4; */
+    /* background-color: #3763f4 */
+}
+.joinus{
+    border: 1px solid #fff;
+    background-color: #3763f4;
+    border-radius: 0.25rem;
+}
+nav .fa-solid{
+    display: none;
+}
+
+@media screen and (max-width:991px){
+    nav .fa-solid{
+        display: block;
+    }
+    nav{
+        margin-right: 0.25rem;
+        width: 100%;
+    }
+    nav ul{
+        background: #01012b;
+        position: fixed;
+        top:0;
+        right: -250px;;
+        width:200px;
+        height: 100vh;
+        padding-top: 50px; 
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: flex;
+        flex-direction:column;
+        margin: 25px;
+    }
+    nav ul .fa-xmark{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    } 
+}

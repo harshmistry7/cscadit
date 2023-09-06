@@ -40,7 +40,7 @@ html{
 #home{
     width: 100%;
     height: 100vh;
-    background-image: url(/assets/img/others/bghm.jpg);
+    background-image: url(/cscadit/assets/img/others/bghm.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -270,7 +270,7 @@ html{
     #home{
         width: 100%;
         height: 100vh;
-        background-image: url(/csc/assets/img/basic/bghm2.jpg);
+        background-image: url(/cscadit/assets/img/basic/bghm2.jpg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;

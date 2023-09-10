@@ -310,6 +310,9 @@ html{
     .contact-pg{
         padding: 2rem 0rem;;
     }
+    .home-txt .btn{
+        font-size: small;
+    }
     
 }
 

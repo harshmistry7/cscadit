@@ -74,6 +74,9 @@ p{
     }
     .fimg img{
         width: 20rem;
-        
+    }
+    .event-cnt img{
+        max-width: 20rem;
+        object-fit: contain;
     }
 }

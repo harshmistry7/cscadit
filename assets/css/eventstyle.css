@@ -34,9 +34,20 @@
     text-decoration: none;
     color: #fff;
 }
-
+.sb-heading{
+    text-align: center;
+    color:#00b779;
+}
+.eve-head{
+    text-align: center;
+}
 p{
     color: #60656e;
+}
+.fimg img{
+    width: 60rem;
+    border-radius: 5%;
+    box-shadow:0 0.5rem 1rem rgba(55,99,244,.15);
 }
 @media only screen and (max-width:750px){
     *{
@@ -60,5 +71,9 @@ p{
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
+    }
+    .fimg img{
+        width: 25rem;
+        
     }
 }
